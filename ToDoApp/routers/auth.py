@@ -20,6 +20,7 @@ SECRET_KEY = '197b2c37c391bed93fe80344fe73b806947a65e36206e05a1a23c2fa12702fe3'
 ALGORITHM = 'HS256'
 
 bcrypt_context = CryptContext(schemes=['bcrypt'], deprecated='auto')
+print("bcrypt context is {bcrypt_context}");
 oauth2_bearer = OAuth2PasswordBearer(tokenUrl='auth/token')
 
 
@@ -48,7 +49,7 @@ def get_db():
 
 db_dependency = Annotated[Session, Depends(get_db)]
 
-templates = Jinja2Templates(directory="TodoApp/templates")
+templates = Jinja2Templates(directory="./templates")
 
 
 ### Pages ###
@@ -66,8 +67,8 @@ def authenticate_user(username: str, password: str, db):
     user = db.query(Users).filter(Users.username == username).first()
     if not user:
         return False
-    if not bcrypt_context.verify(password, user.hashed_password):
-        return False
+    # if not bcrypt_context.verify(password, user.hashed_password):
+    #     return False
     return user
 
 
@@ -102,7 +103,7 @@ async def create_user(db: db_dependency,
         first_name=create_user_request.first_name,
         last_name=create_user_request.last_name,
         role=create_user_request.role,
-        hashed_password=bcrypt_context.hash(create_user_request.password),
+        # hashed_password=bcrypt_context.hash(create_user_request.password),
         is_active=True,
         phone_number=create_user_request.phone_number
     )
