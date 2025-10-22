@@ -24,11 +24,11 @@ A simple **web-based Todo Application** built using **FastAPI** and **SQLite3**,
 
 | Login Page | Register Page |
 |-------------|---------------|
-| ![Login Page](/ToDoApp/screenshots/LoginPage.png) | ![Register Page](./screenshots/RegisterPage.png) |
+| ![Login Page](/ToDoApp/screenshots/LoginPage.png) | ![Register Page](/ToDoApp/screenshots/RegisterPage.png) |
 
 | Todo List | Add New Todo |
 |-------------|---------------|
-| ![ToDo List](./screenshots/ToDoList.png) | ![New ToDo](./screenshots/NewToDo.png) |
+| ![ToDo List](/ToDoApp/screenshots/ToDoList.png) | ![New ToDo](/ToDoApp/screenshots//NewToDo.png) |
 
 ## 🧰 Tech Stack
 
