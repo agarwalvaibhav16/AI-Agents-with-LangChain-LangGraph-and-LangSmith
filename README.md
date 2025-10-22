@@ -24,7 +24,7 @@ A simple **web-based Todo Application** built using **FastAPI** and **SQLite3**,
 
 | Login Page | Register Page |
 |-------------|---------------|
-| ![Login Page](./screenshots/LoginPage.png) | ![Register Page](./screenshots/RegisterPage.png) |
+| ![Login Page](PythonToDosWebApp/ToDoApp/screenshots/LoginPage.png) | ![Register Page](./screenshots/RegisterPage.png) |
 
 | Todo List | Add New Todo |
 |-------------|---------------|
