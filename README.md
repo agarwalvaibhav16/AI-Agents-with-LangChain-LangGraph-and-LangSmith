@@ -19,7 +19,16 @@ A simple **web-based Todo Application** built using **FastAPI** and **SQLite3**,
   - High-performance, modern Python web framework.
   - Built-in interactive API docs using Swagger UI.
 
----
+
+## 🖼️ Screenshots
+
+| Login Page | Register Page |
+|-------------|---------------|
+| ![Login Page](static/screenshots/LoginPage.png) | ![Register Page](static/screenshots/RegisterPage.png) |
+
+| Todo List | Add New Todo |
+|-------------|---------------|
+| ![ToDo List](static/screenshots/ToDoList.png) | ![New ToDo](static/screenshots/NewToDo.png) |
 
 ## 🧰 Tech Stack
 
